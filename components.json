@@ -10,7 +10,10 @@
   "rsc": true,
   "tsx": true,
   "aliases": {
-    "utils": "@/lib/utils",
-    "components": "@/components"
+    "components": "#front/components",
+    "utils": "#front/lib/utils",
+    "ui": "#front/components/ui",
+    "lib": "#front/lib",
+    "hooks": "#front/hooks"
   }
 }
