@@ -4,4 +4,7 @@
   "main": "src/backend/index.ts",
   "compatibility_flags": ["nodejs_compat"],
   "compatibility_date": "2025-11-26",
+  "assets": {
+    "directory": "./dist/client",
+  },
 }
