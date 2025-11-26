@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "vike dev",
     "nodemon": "nodemon --exec tsx api/index.ts",
-    "build": "tsc -b && vite build",
+    "build": "bun run src/index.ts && vike build",
     "lint": "eslint .",
     "preview": "vike preview",
     "prod": "NODE_ENV=production node dist/server/index.js"
