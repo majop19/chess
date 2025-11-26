@@ -48,7 +48,6 @@ async function startServer() {
 
   passport.serializeUser(function (user, done) {
     console.log("serialize");
-    // @ts-expect-error -- user has id
     done(null, user.id);
   });
   passport.deserializeUser(deserializeUser);

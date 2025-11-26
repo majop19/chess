@@ -2,13 +2,14 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.worker.json" }
   ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "#front/*": ["./src/frontend/*"],
-      "front/*": ["./src/frontend/*"],
+      "#frontx/*": ["./src/frontend/*"],
       "#back/*": ["./src/backend/*"]
     },
     "strictNullChecks": true,
