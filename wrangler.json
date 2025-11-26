@@ -1,0 +1,5 @@
+{
+  "name": "chess-app",
+  "main": "src/backend/index.ts",
+  "compatibility_date": "2025-11-26"
+}
