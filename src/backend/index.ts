@@ -46,7 +46,10 @@ async function startServer() {
   passport.use(localStrategy);
   passport.use(googleStrategy);
 
-  passport.serializeUser(function (user, done) {
+  passport.serializeUser(function (
+    user: { id: mongoose.Types.ObjectId | ObjectId },
+    done
+  ) {
     console.log("serialize");
     done(null, user.id);
   });
