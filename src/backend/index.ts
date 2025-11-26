@@ -46,11 +46,9 @@ async function startServer() {
   passport.use(localStrategy);
   passport.use(googleStrategy);
 
-  passport.serializeUser(function (
-    user: { id: mongoose.Types.ObjectId | ObjectId },
-    done
-  ) {
+  passport.serializeUser(function (user, done) {
     console.log("serialize");
+    // @ts-expect-error -- user has id
     done(null, user.id);
   });
   passport.deserializeUser(deserializeUser);
