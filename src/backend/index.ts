@@ -1,4 +1,3 @@
-// @ts-nocheck dfgg
 import express from "express";
 import cors from "cors";
 import AuthRouter from "#back/routes/auth/auth.route";
