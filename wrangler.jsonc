@@ -1,6 +1,8 @@
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "chess-app",
   "main": "src/backend/index.ts",
   "compatibility_flags": ["nodejs_compat"],
+  "outputFormat": "esm",
   "compatibility_date": "2025-11-26",
 }
